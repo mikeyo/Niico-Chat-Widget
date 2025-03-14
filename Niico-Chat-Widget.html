@@ -15,7 +15,12 @@
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-      }
+        }
+
+  /* Ensure chat widget appears above everything */
+  .opendialog-chat-widget, .opendialog-cta {
+    z-index: 9999 !important;
+  }
     </style>
     <script>
       window.openDialogSettings = {
