@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Niico Chat Widget</title>
+</head>
+<body style="margin:0;padding:0;overflow:hidden;">
+    <script>
+    window.OpenDialogSettings = {
+      src: 'https://niico.cloud.opentdialog.ai',
+      url: 'https://niico.cloud.opendialog.ai',
+      user: {
+        custom: {
+          selected_scenario: '1125899906842658',
+          session_lifetime: 0
+        }
+      },
+      appId: '1125899906842626',  // optional, depending on your OpenDialog setup
+      customSettings: {
+          openCta: {
+              title: "Hello! 👋 Chat with us!",
+              background: "#004AAD",
+              color: "#FFFFFF",
+              position: "bottom-right"
+          }
+      }
+    };
+    <script>
+        window.OpenDialogSettings = {
+          src: 'https://niico.cloud.opendialog.ai/dist/nu-webchat-js',
+          settings: window.openDialogSettings
+      };
+    </script>
+    <script>
+        window.openDialogSettings = {
+          custom: {
+            selected_scenario: '1125899906842658',
+            session_lifetime: 0
+          },
+          customSettings: {
+            openCta: {
+              title: "Hello! 👋 Chat with us!",
+              background: "#001a72",
+              color: "#FFFFFF"
+            }
+          }
+        };
+    </script>
+    <!-- Your provided snippet -->
+    <script>
+      window.openDialogSettings = {
+        custom: {
+          selected_scenario: '1125899906842658',
+          session_lifetime: 0
+        },
+        customSettings: {
+          openCta: {
+            title: "Hello! 👋 Chat with us!",
+            background: "#001a72",
+            color: "#FFFFFF",
+          },
+        },
+      };
+    </script>
+    <script src='https://niico.cloud.opendialog.ai/dist/nu-webchat-js'></script>
+</body>
+</html>
