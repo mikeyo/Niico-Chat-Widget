@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niico Chat Widget</title>
     <style>
-      html, body { 
-          height: 100%; 
-          margin: 0; 
-          padding: 0; 
-      }
-      body {
+    body {
           background-image: url("Niico-University-2.png");
-          background-size: cover;
-          background-position: center;
+          background-size: contain;
+          background-position: center center;
           background-repeat: no-repeat;
+        background-attachment: fixed;
         }
-
-  /* Ensure chat widget appears above everything */
-  .opendialog-chat-widget, .opendialog-cta {
-    z-index: 9999 !important;
-  }
     </style>
-    <script>
+</head>
+<body>
+    <!-- Your page content goes here -->
+
+</div>
+<script>
       window.openDialogSettings = {
         url: 'https://niico.cloud.opendialog.ai',
         appKey: '1125899906842626|C7vF5RN9ptTycM5V0QOzpm4ynBycdjGYsCOsreDac4d200dd',
@@ -36,8 +32,10 @@
           openCta: {
             title: "KIRA",
             icon: "https://niico.cloud.opendialog.ai/images/cta-chat-open.svg",
-            background: "#001abf",
-            color: "#ffffff"
+          borderRadius: "50px",
+          width: "280px",
+          height: "80px",
+          background: "#001abf",
           }
         }
       };
